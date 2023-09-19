@@ -22,6 +22,31 @@
                 <img src="/images/header-nameplate.png" alt="The Purisimian Nameplate" class="nameplate">
             </div>
 
+            <div class="theme-switch">
+                <label class="switch">
+                    <input type="checkbox" id="theme-toggle">
+                    <span class="slider round"></span>
+                </label>
+            </div>
+            <script>
+                const themeToggle = document.getElementById('theme-toggle');
+                const themeStyle = document.getElementById('theme-style');
+                const body = document.body;
+            
+                themeToggle.addEventListener('change', () => {
+                    if (themeToggle.checked) {
+                        body.classList.add('dark-mode');
+                        body.classList.remove('light-mode');
+                        themeStyle.setAttribute('href', '/css/dark-style.css'); // Add a dark mode CSS file
+                    } else {
+                        body.classList.add('light-mode');
+                        body.classList.remove('dark-mode');
+                        themeStyle.setAttribute('href', '/css/light-style.css'); // Add a light mode CSS file
+                    }
+                });
+            </script>
+            
+
             <nav>
 
                 <button class="mobile-nav-toggle" aria-controls="nav-bar" aria-expanded="false"><span class="sr-only">Menu</span></button>
@@ -229,5 +254,7 @@
         <script src="js/carousel.js"></script>
 
     </body>
+
+    
 
 </html>
