@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="/images/favicon.png">
+        <title>CNHS, protektado ng PNP - POSO</title>
+        <link rel="stylesheet" href="news-article3.css">
+    </head>
+
+    <body>
+
+        <header class="header flex">
+
+            <div class="nameplate-container">
+                <img src="/images/header-nameplate.png" alt="Ang Tinig Nameplate" class="nameplate">
+            </div>
+
+            <nav>
+
+                <button class="mobile-nav-toggle" aria-controls="nav-bar" aria-expanded="false"><span class="sr-only">Menu</span></button>
+
+                <ul id="nav-bar" data-visible="false" class="nav-bar flex">
+                    <li>
+                        <a href="index.html" class="active" id="nav-button">HOME</a>
+                    </li>
+                    <li>
+                        <a href="/error404.html" id="nav-button">ARTICLES</a>
+                    </li>
+                    <li>
+                        <a href="/error404.html" id="nav-button">PROJECTS</a>
+                    </li>
+                    <li>
+                        <a href="/error404.html" id="nav-button">ABOUT US</a>
+                    </li>
+                </ul>
+
+                <button class="mobile-nav-toggle" aria-controls="nav-bar" aria-expanded="false"><span class="sr-only">Menu</span></button>
+
+            </nav>
+
+        </header>
+
+        <main>
+            <article>
+                <div class="article-image-container">
+                    <img src="images/headline3.jpg" alt="">
+                </div>
+                <div class="image-caption-container">
+                    <p><span id="caption-title">KICKER INI.</span> Roxas City, Capiz — In a heartfelt and inspiring commencement speech, Senator [Full Name] Gatchalan delivered a powerful message to the graduating class of Colegio de la Purisima Concepcion, leaving an indelible mark on the minds and hearts of the students as they prepare to embark on their journey beyond academia.<span id="photo-credit">
+                    (photos by)
+                    </span></p>
+                </div>
+                <div class="horizontal-line">
+                    <hr width="1000px" />
+                </div>
+                <div class="banner-headline-container">
+                    Senator Gatchalan Inspires Graduates at CPC
+                </div>    
+                <div class="by-line">
+                    by Shigrid Ann Docil
+                </div>
+                <div class="article-content">
+                    <p>
+                        Roxas City, Capiz — In a heartfelt and inspiring commencement speech, Senator [Full Name] Gatchalan delivered a powerful message to the graduating class of Colegio de la Purisima Concepcion, leaving an indelible mark on the minds and hearts of the students as they prepare to embark on their journey beyond academia.
+                    </p>
+                </div>
+                <div class="article-content">
+                    <p>
+                        As the esteemed commencement speaker at the prestigious institution, Senator Gatchalan captivated the audience with his wisdom, words of encouragement, and personal anecdotes. His speech revolved around the themes of resilience, determination, and the importance of active participation in the nation's progress.
+                </div>
+                <div class="article-content">
+                    <p>
+                        Senator Gatchalan began his address by acknowledging the unique challenges that the graduating class had faced during their academic journey, particularly the disruptions brought about by the global pandemic. He commended the students for their strength and adaptability in overcoming these obstacles, emphasizing that their resilience had prepared them for the uncertainties of the future.
+                    </p>
+                </div>
+                <div class="article-content">
+                    <p>
+                        The Senator shared his own experiences and the trials he encountered in his political career, highlighting the importance of perseverance and a strong sense of purpose in achieving one's goals. He encouraged the graduates to use their education and newfound skills to contribute positively to society, echoing the institution's motto of "Educating Hearts, Transforming Minds."
+                    </p>
+                </div>
+                <div class="article-content">
+                    <p>
+                        Colegio de la Purisima Concepcion's commencement ceremony will undoubtedly be remembered as a moment when students were not only celebrated for their academic achievements but were also inspired to become responsible, compassionate, and engaged citizens by one of the nation's most prominent leaders, Senator Gatchalan.
+
+                    </p>
+                </div>
+                <div class="horizontal-line-end">
+                    <hr width="1000px" />
+                </div>
+            </article>
+        </main>
+
+        <script src="/scripts/nav.js"></script>
+
+        <style>
+            :root {
+    font-family: 'Poppins', sans-serif;
+}
+
+.flex {
+    display: flex;
+    gap: var(--gap, 1rem);
+}
+
+.sr-only {
+    display: none;
+}
+
+.header {
+    align-items: center;
+    justify-content: space-between;
+}
+
+.mobile-nav-toggle {
+    display: none;
+}
+
+
+.nameplate-container {
+    width: 300px;
+}
+
+.nameplate {
+    margin: 2rem;
+    width: 100%;
+}
+
+.nav-bar {
+    padding: 0 2rem 0 0 ;
+    margin: 0 0 0 0;
+    list-style: none;
+    font-size: 1.25em;
+    font-weight: 600;
+    --gap: 1.5em;
+}
+
+.nav-bar a {
+    text-decoration: none;
+    color: #7300a0;
+    padding: 6px 15px;
+    border-radius: 20px;
+    margin: 0 10 px;
+    transition: 0.25s;
+}
+
+.nav-bar a:hover, 
+.nav-bar a.active {
+    background-color: rgb(62, 14, 103);
+    color: #ffffff;
+}
+
+@media (max-width: 65em) {
+    .nav-bar {
+        --gap: 1.25em;
+        z-index: 1000;
+        position: fixed;
+        inset: 0 0 0 0;
+        background: white;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.5em;
+        transform: translateX(100%);
+        transition: transform 350ms ease-out;
+    }
+
+    .nav-bar[data-visible="true"] {
+        transform: translateX(0%);
+    }
+
+
+    .mobile-nav-toggle {
+    display: none;
+}
+    .mobile-nav-toggle {
+        display: block;
+        z-index: 9999;
+        position: absolute;
+        background: url(/assets/icon-hamburger-menu.svg);
+        width: 2.5rem;
+        aspect-ratio: 1;
+        top: 3rem;
+        right: 2rem;
+        background-repeat: no-repeat;
+        background-size: contain;
+        border: none;
+        cursor: pointer;
+    }
+
+    .mobile-nav-toggle[aria-expanded="true"] {
+        background-image: url(../assets/icon-hamburger-menu-close.svg);
+        position: fixed;
+    }
+
+    .nameplate-container {
+        width: 200px;
+    }
+}
+
+.resize-animation-stopper * {
+    animation: none !important;
+    transition: none !important;
+}
+
+article {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.article-image-container {
+    height: 550px;
+    width: 1000px;
+}
+
+.article-image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 25px;
+}
+
+.image-caption-container {
+    margin-top: 10px;
+    width: 900px;
+    font-size: 0.85em;
+}
+
+#caption-title {
+    font-weight: bold;
+}
+
+#photo-credit {
+    font-style: italic;
+    font-weight: 600;
+}
+
+.banner-headline-container {
+    font-weight: 800;
+    font-size: 2.5em;
+    width: 900px;
+    padding: 20px 30px;
+}
+
+.by-line {
+    margin-top: -10px;
+    font-size: 0.8em;
+    width: 900px;
+}
+
+.article-content {
+    width: 900px;
+}
+
+
+
+
+        </style>
+
+    </body>
+
+</html>

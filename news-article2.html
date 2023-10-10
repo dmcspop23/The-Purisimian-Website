@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="/images/favicon.png">
+        <title>Earthquake drill sa CNHS, pinaigting</title>
+        <link rel="stylesheet" href="news-article2.css">
+    </head>
+
+    <body>
+
+        <header class="header flex">
+
+            <div class="nameplate-container">
+                <img src="/images/header-nameplate.png" alt="Ang Tinig Nameplate" class="nameplate">
+            </div>
+
+            <nav>
+
+                <button class="mobile-nav-toggle" aria-controls="nav-bar" aria-expanded="false"><span class="sr-only">Menu</span></button>
+
+                <ul id="nav-bar" data-visible="false" class="nav-bar flex">
+                    <li>
+                        <a href="index.html" class="active" id="nav-button">HOME</a>
+                    </li>
+                    <li>
+                        <a href="/error404.html" id="nav-button">ARTICLES</a>
+                    </li>
+                    <li>
+                        <a href="/error404.html" id="nav-button">PROJECTS</a>
+                    </li>
+                    <li>
+                        <a href="/error404.html" id="nav-button">ABOUT US</a>
+                    </li>
+                </ul>
+
+                <button class="mobile-nav-toggle" aria-controls="nav-bar" aria-expanded="false"><span class="sr-only">Menu</span></button>
+
+            </nav>
+
+
+                
+
+
+        </header>
+
+        <main>
+            <article>
+                <div class="article-image-container">
+                    <img src="images/headline2.jpeg" alt="">
+                </div>
+                <div class="image-caption-container">
+                    <p><span id="caption-title">OPENING PROGRAM</span> Students of Colegio de la Purisima Concepcion are brimming with great enthusiasm and splendor as the 76th Grand Intramurals is finally open! <span id="photo-credit">
+                    (photos by)
+                    </span></p>
+                </div>
+                <div class="horizontal-line">
+                    <hr width="1000px" />
+                </div>
+                <div class="banner-headline-container">
+                    HEADLINE INI
+                </div>    
+                <div class="by-line">
+                    by Shigrid Ann Docil
+                </div>
+                <div class="article-content">
+                    <p>
+                        This year's festive opening program kicked off after the Eucharistic Celebration and the Grand Parade. The cheers of students from different departments filled the walls of the main campus, displaying their full power and eagerness. 
+                    </p>
+                </div>
+                <div class="article-content">
+                    <p>
+                        Very Rev. Fr. Cyril B. Villareal, Rector of CPC, sparked the flames of fervor in everyone's hearts with his opening remarks. He emphasized that the Grand Intramurals is "a great avenue for our students to showcase their talents and skills." Indeed, every year is a new chance for students to pause from the daily academic life and proudly show their talents and skills. 
+
+                    </p>
+                </div>
+                <div class="article-content">
+                    <p>
+                        Rev. Fr. Raul N. Ticar, Jr., College Deans, and the SSPC President were then called for the hoisting of the flags, symbolizing the different departments taking part in the joy of friendly competition. The flags were raised for everyone to behold the participation of their departments in cultural and sports events. Shortly afterwards, everyone bore witness to the Ceremonial Lighting of the Symbolic Flame, which holds a deep and heartfelt meaning to atheletes and students alike. To keep the spirit of friendly competition alive, the student athletes proudly raised their right hand and took the Oath of Amateurism.
+                    </p>
+                </div>
+                <div class="article-content">
+                    <p>
+                        The crowd was just getting heated and ready for the much-awaited Sinamba sa Purisima dance competition! Purisimians were left in awe of the festive and fierce dances, with the dancers donning bright, colorful, and extravagant costumes and props. The time and effort that each department invested in preparing for the contest were truly evident in their entries. The results were announced afterwards. The third place award was took home by the Senior High School Department who were clad in their charming blue and green attire. The second place went to the College of Business Management and Accountancy, wearing incredibly colorful outfits and earning cheers for their mesmerizing performance. On top of all performers, the College of Engineering and Technology bagged the first place award. Dressed in head-turning sparkly costumes and intricate props as they charmed the audience with their dance moves. The CET Department's win is truly well-deserved.
+                    </p>
+                </div>
+                <div class="article-content">
+                    <p>
+                        "Play as if it's your first time to play and your last time to play," Very Rev. Fr. Villareal's message to Purisimians as the competitions officially open. The Grand Intramurals is slated from October 4 to October 7. Giddy up, Purisimians! The fun has just begun.
+                    </p>
+            
+                <div class="horizontal-line-end">
+                    <hr width="1000px" />
+                </div>
+            </article>
+        </main>
+
+        <script src="/scripts/nav.js"></script>
+
+        <style>
+            :root {
+    font-family: 'Poppins', sans-serif;
+}
+
+.flex {
+    display: flex;
+    gap: var(--gap, 1rem);
+}
+
+.sr-only {
+    display: none;
+}
+
+.header {
+    align-items: center;
+    justify-content: space-between;
+}
+
+.mobile-nav-toggle {
+    display: none;
+}
+
+
+.nameplate-container {
+    width: 300px;
+}
+
+.nameplate {
+    margin: 2rem;
+    width: 100%;
+}
+
+.nav-bar {
+    padding: 0 2rem 0 0 ;
+    margin: 0 0 0 0;
+    list-style: none;
+    font-size: 1.25em;
+    font-weight: 600;
+    --gap: 1.5em;
+}
+
+.nav-bar a {
+    text-decoration: none;
+    color: #7300a0;
+    padding: 6px 15px;
+    border-radius: 20px;
+    margin: 0 10 px;
+    transition: 0.25s;
+}
+
+.nav-bar a:hover, 
+.nav-bar a.active {
+    background-color: rgb(62, 14, 103);
+    color: #ffffff;
+}
+
+@media (max-width: 65em) {
+    .nav-bar {
+        --gap: 1.25em;
+        z-index: 1000;
+        position: fixed;
+        inset: 0 0 0 0;
+        background: white;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.5em;
+        transform: translateX(100%);
+        transition: transform 350ms ease-out;
+    }
+
+    .nav-bar[data-visible="true"] {
+        transform: translateX(0%);
+    }
+
+
+    .mobile-nav-toggle {
+    display: none;
+}
+    .mobile-nav-toggle {
+        display: block;
+        z-index: 9999;
+        position: absolute;
+        background: url(/assets/icon-hamburger-menu.svg);
+        width: 2.5rem;
+        aspect-ratio: 1;
+        top: 3rem;
+        right: 2rem;
+        background-repeat: no-repeat;
+        background-size: contain;
+        border: none;
+        cursor: pointer;
+    }
+
+    .mobile-nav-toggle[aria-expanded="true"] {
+        background-image: url(../assets/icon-hamburger-menu-close.svg);
+        position: fixed;
+    }
+
+    .nameplate-container {
+        width: 200px;
+    }
+}
+
+.resize-animation-stopper * {
+    animation: none !important;
+    transition: none !important;
+}
+
+article {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.article-image-container {
+    height: 550px;
+    width: 1000px;
+}
+
+.article-image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 25px;
+}
+
+.image-caption-container {
+    margin-top: 10px;
+    width: 900px;
+    font-size: 0.85em;
+}
+
+#caption-title {
+    font-weight: bold;
+}
+
+#photo-credit {
+    font-style: italic;
+    font-weight: 600;
+}
+
+.banner-headline-container {
+    font-weight: 800;
+    font-size: 2.5em;
+    width: 900px;
+    padding: 20px 30px;
+}
+
+.by-line {
+    margin-top: -10px;
+    font-size: 0.8em;
+    width: 900px;
+}
+
+.article-content {
+    width: 900px;
+}
+
+
+
+
+        </style>
+
+    </body>
+
+</html>

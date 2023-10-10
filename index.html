@@ -21,31 +21,7 @@
             <div class="nameplate-container">
                 <img src="/images/header-nameplate.png" alt="The Purisimian Nameplate" class="nameplate">
             </div>
-
-            <div class="theme-switch">
-                <label class="switch">
-                    <input type="checkbox" id="theme-toggle">
-                    <span class="slider round"></span>
-                </label>
-            </div>
-            <script>
-                const themeToggle = document.getElementById('theme-toggle');
-                const themeStyle = document.getElementById('theme-style');
-                const body = document.body;
-            
-                themeToggle.addEventListener('change', () => {
-                    if (themeToggle.checked) {
-                        body.classList.add('dark-mode');
-                        body.classList.remove('light-mode');
-                        themeStyle.setAttribute('href', '/css/dark-style.css'); // Add a dark mode CSS file
-                    } else {
-                        body.classList.add('light-mode');
-                        body.classList.remove('dark-mode');
-                        themeStyle.setAttribute('href', '/css/light-style.css'); // Add a light mode CSS file
-                    }
-                });
-            </script>
-            
+        
 
             <nav>
 
@@ -56,19 +32,13 @@
                         <a href="index.html" class="active" id="nav-button">HOME</a>
                     </li>
                     <li>
-                        <a href="/error404.html" id="nav-button">NEWS</a>
+                        <a href="/error404.html" id="nav-button">ARTICLES</a>
                     </li>
                     <li>
-                        <a href="/error404.html" id="nav-button">EDITORIAL</a>
+                        <a href="/error404.html" id="nav-button">PROJECTS</a>
                     </li>
                     <li>
-                        <a href="/error404.html" id="nav-button">FEATURE</a>
-                    </li>
-                    <li>
-                        <a href="articles/agtek/agtek-article1/agtek-article1.html" id="nav-button">SCI-TECH</a>
-                    </li>
-                    <li>
-                        <a href="/error404.html" id="nav-button">SPORTS</a>
+                        <a href="/error404.html" id="nav-button">ABOUT US</a>
                     </li>
                 </ul>
 
@@ -89,26 +59,26 @@
                     <ul class="carousel__track">
                         <li class="carousel__slide current-slide">
                             <div class="carousel__image-container">
-                                <a href="/articles/balita/news-article1/news-article1.html"><img class="carousel__image" src="/images/headline.jpg" alt=""></a>
+                                <a href="news-article1.html"><img class="carousel__image" src="/images/headline.jpeg" alt=""></a>
                             </div>
                             <div class="carousel__headline-container">
-                                <a href="/articles/balita/news-article1/news-article1.html">Sen. Gatchalian Inspires Graduates at CPC's Momentous 75th Commencement</a>
+                                <a href="news-article1.html">SGS and CBMA Reign as Mr. and Ms. CPC 2023</a>
                             </div>
                             <div class="carousel__by-line-container">
-                                <span class="italic">by</span> <span class="by-name">Shigrid Ann Docil</span> &centerdot; <span id="upload-date">June 11, 2023</span>
+                                <span class="italic">by</span> <span class="by-name">Athena Marian Lariza</span> &centerdot; <span id="upload-date">October 9, 2023</span>
                             </div>
                             <div class="carousel__caption-container">
-                                Roxas City, Capiz - On June 11th, the esteemed Senator Sherwin T. Gatchalian graced the prestigious halls of Colegio de la Purisima Concepcion as the honored keynote speaker..
+                                With so much anticipation, Purisimians filled the San Lorenzo Event Center on October 6 to witness The Big Night of the Search for Mr. and Miss CPC 2023 as part of the 76th Grand Intramurals of Colegio de la Purisima Concepcion.
                             </div>
                         </li>
                         <li class="carousel__slide">
                             <div class="carousel__image-container">
-                                <a href="/articles/balita/news-article2/error404.html">
-                                    <img class="carousel__image" src="/images/news2.jpg" alt="">
+                                <a href="news-article2.html">
+                                    <img class="carousel__image" src="/images/headline2.jpeg" alt="">
                                 </a>
                             </div>
                             <div class="carousel__headline-container one-line">
-                                <a href="/articles/balita/news-article2/news-article2.html">
+                                <a href="news-article2.html">
                                     (HEADLINE)
                                 </a>
                             </div>
@@ -121,12 +91,12 @@
                         </li>
                         <li class="carousel__slide">
                             <div class="carousel__image-container">
-                                <a href="/articles/balita/news-article3/error404.html">
-                                    <img class="carousel__image" src="/images/pnp-poso-asst.JPG" alt="">
+                                <a href="news-article3.html">
+                                    <img class="carousel__image" src="/images/headline3.jpg" alt="">
                                 </a>
                             </div>
                             <div class="carousel__headline-container one-line">
-                                <a href="/articles/balita/news-article3/news-article3.html">
+                                <a href="news-article3.html">
                                     (HEADLINE)
                                 </a>
                             </div>
